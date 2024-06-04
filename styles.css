@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(122505233333.jpg);
+    
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+     
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: bold;
+    color: #e50914;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.signin a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/309f8750-659f-4b29-a318-3b2fbc7a0725/05a4c26d-d27e-43a5-bc98-04c9c8a452de/EG-en-20230605-popsignuptwoweeks-perspective_alpha_website_medium.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+}
+ 
+.signin button {
+    padding: 0.3em 1em;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 15em;
+}
+
+.hero-text button {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ 
+.hero-text button:hover {
+    background-color: #f40612;
+}
+
+/* Footer Styling */
+footer {
+     
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+}
